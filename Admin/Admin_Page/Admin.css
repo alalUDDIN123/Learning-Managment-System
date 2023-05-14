@@ -135,7 +135,13 @@ form > button {
   margin-right: 50px;
 }
 
-
+#no_user{
+  text-align: center;
+  font-size: 25px;
+  color: #333;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
 
 /* res */
 
@@ -300,6 +306,14 @@ form > button {
   #remove{
     width: 90%;
     margin-left: 10px;
+  }
+
+  #no_user{
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
  
 }

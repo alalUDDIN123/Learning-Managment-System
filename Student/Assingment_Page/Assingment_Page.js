@@ -2,9 +2,13 @@ let data = JSON.parse(localStorage.getItem("assignments")) || [];
 
 let noLectureData = document.getElementById("no_assignmnt")
 let filterDuv = document.getElementsByClassName("add")[0]
-// console.log(filterDuv);
 
-// console.log("lengthL:", data.length);
+let checkLogin=localStorage.getItem("studentLoggedIn");
+
+if(!checkLogin){
+  alert("Please login to access this page")
+  window.location.href="../../Registration/login/login.html"
+}
 
 
 if (data.length === 0) {
@@ -120,7 +124,7 @@ if (data.length === 0) {
 
 
   function showData() {
-    let emailData = JSON.parse(localStorage.getItem("currentUser"));
+    let emailData = JSON.parse(localStorage.getItem("studentLoggedIn"));
     document.querySelector(".guest").innerHTML = `
     <p>${emailData} </p>
     `;
@@ -157,7 +161,7 @@ hamburger.addEventListener("click", function () {
 
 // select logo
 let logo=document.getElementsByClassName("home_student_page_redirect")[0];
-console.log(logo);
+// console.log(logo);
 logo.addEventListener("click",()=>{
   window.location.href="../Lecture_Page/student.html"
 })

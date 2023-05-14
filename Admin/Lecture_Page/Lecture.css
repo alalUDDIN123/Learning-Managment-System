@@ -251,4 +251,10 @@ form > div > button {
 
   }
 
+
+  /* add form respons */
+
+  form{
+    grid-template-columns: repeat(1,1fr);
+  }
 }

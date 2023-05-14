@@ -1,4 +1,9 @@
 let data = JSON.parse(localStorage.getItem("assignments")) || [];
+let emailData = JSON.parse(localStorage.getItem("adminLoggedIn"));
+if (!emailData) {
+  alert("Please Login To Access This Page")
+  window.location.href = "../../Registration/login/login.html"
+}
 class lectureList {
   constructor() {}
   showLectureList() {
@@ -61,7 +66,6 @@ function addLecture() {
   lecture.addLectureList(title, type, instructor, schedule);
 }
 function showData() {
-  let emailData = JSON.parse(localStorage.getItem("currentUser"));
   document.querySelector(".guest").innerHTML = `
   <p>${emailData}</p>
   `;
@@ -79,7 +83,7 @@ hamburger.addEventListener("click", function () {
 
 // select logo
 let logo=document.getElementsByClassName("home_admin_page_redirect")[0];
-console.log(logo);
+// console.log(logo);
 logo.addEventListener("click",()=>{
   window.location.href="../Admin_Page/Admin.html"
 })

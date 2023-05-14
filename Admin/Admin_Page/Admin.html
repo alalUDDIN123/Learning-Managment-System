@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Masai School | Course</title>
-    <link rel="stylesheet" href="Admin.css">
-  </head>
-  <body>
-    <div class="nav">
-      <div class="elements">
-        <!-- <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" /> -->
-        <h1 class="home_admin_page_redirect" >Admin</h1>
-        <a href="#" class="active"><p>Users</p></a>
-        <a href="../Lecture_Page/Lecture.html"><p>Lectures</p></a>
-        <a href="../Assingment/Assingment.html"><p>Assignments</p></a>
-        <a href="#"> Quizzes</a>
-        <a href="#">Tickets</a>
-        <a href="#">Discussion</a>
-        <a href="#">Notification</a>
-        <a href="#">Messages</a>
-        <a href="#"> Electives</a>
-        <a href="#">Courses</a>
-      </div>
-      <div>
-        <div class="guest"></div>
-        <!-- <a href="file:///E:/Website/Masai%20Course%20Platform/Registration/Signup%20Page/index.html">Logout</a> -->
-      </div>
-    </div>
 
-    <button class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masai School | Admin | Home </title>
+  <link rel="stylesheet" href="Admin.css">
+</head>
 
-    <div class="title">
-      <h2>Users</h2>
+<body>
+  <div class="nav">
+    <div class="elements">
+      <!-- <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" /> -->
+      <h1 class="home_admin_page_redirect">Admin</h1>
+      <a href="#" class="active">
+        <p>Users</p>
+      </a>
+      <a href="../Lecture_Page/Lecture.html">
+        <p>Lectures</p>
+      </a>
+      <a href="../Assingment/Assingment.html">
+        <p>Assignments</p>
+      </a>
+      <a href="#"> Quizzes</a>
+      <a href="#">Tickets</a>
+      <a href="#">Discussion</a>
+      <a href="#">Notification</a>
+      <a href="#">Messages</a>
+      <a href="#"> Electives</a>
+      <a href="#">Courses</a>
     </div>
-    
-    <div class="add">
-      <p>Add students</p>
-      <form>
-        <input type="email" id="email" placeholder="Email" />
-        <input type="text" id="pass" placeholder="Password" />
-        <select id="type">
-          <option value="student">Student</option>
-          <option value="admin">Admin</option>
-        </select>
-        <button onclick="addStudent()">Add</button>
-      </form>
+    <div>
+      <div class="guest"></div>
+      <!-- <a href="file:///E:/Website/Masai%20Course%20Platform/Registration/Signup%20Page/index.html">Logout</a> -->
     </div>
+  </div>
 
-    <div class="section">
-      <div class="heading">
-        <p>Email</p>
-        <p>Password</p>
-        <p>Role</p>
-        <p>Remove</p>
-      </div>
-      <div class="user-list"></div>
+  <button class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="title">
+    <h2>Users</h2>
+  </div>
+
+  <div class="add">
+    <p>Add students</p>
+    <form>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="pass" placeholder="Password" required/>
+      <select id="type" required>
+        <option value="student">Student</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button onclick="addStudent()">Add</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <div class="heading">
+      <p>Email</p>
+      <p>Password</p>
+      <p>Role</p>
+      <p>Remove</p>
     </div>
-  </body>
+    <div class="user-list"></div>
+  </div>
+  <!-- <a href="../../Registration/login/login.html"></a> -->
+
+
+
+
+</body>
+
 </html>
 <script src="Admin.js"></script>

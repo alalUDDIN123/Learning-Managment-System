@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Masai School</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="welCome_container">
+        <div>
+            <h2>Welcome to masai school</h2>
+            <p>This is is a <strong>learning managment application (LMS)</strong> made by me, <strong>Alal
+                    Uddin</strong> </p>
+            <p>Tech stack used in this project are : <strong>Javascript, Html and Css</strong></p>
+        </div>
+
+    </div>
+    <div class="btn">
+        <button>Login</button>
+        <button>Signup</button>
+    </div>
+    <footer>2023 @Copywright by Alal Uddin</footer>
+
+</body>
+
+</html>
+<script>
+    // Select all the buttons individually
+    let buttons = document.querySelectorAll('button');
+
+    // Add event listener to each button
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            if (button.textContent === "Login") {
+                window.location.href = "./Registration/login/login.html"
+            } else {
+                window.location.href = './Registration/Signup/index.html'
+            }
+        });
+    });
+
+</script>

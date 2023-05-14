@@ -1,11 +1,15 @@
 let data = JSON.parse(localStorage.getItem("lectures")) || [];
-// slecting no lecture div
 
+// slecting no lecture div
 let noLectureData = document.getElementById("no_lecture")
 let filterDuv = document.getElementsByClassName("add")[0]
-// console.log(filterDuv);
 
-// console.log("lengthL:", data.length);
+let checkLogin=localStorage.getItem("studentLoggedIn");
+
+if(!checkLogin){
+  alert("Please login to access this page")
+  window.location.href="../../Registration/login/login.html"
+}
 
 
 if (data.length === 0) {
@@ -120,7 +124,7 @@ showLecture();
 // Show email of the student 👍
 
 function showData() {
-  let emailData = JSON.parse(localStorage.getItem("currentUser"));
+  let emailData = JSON.parse(localStorage.getItem("studentLoggedIn"));
   document.querySelector(".guest").innerHTML = `
     <p>${emailData} </p>
     `;

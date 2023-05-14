@@ -1,6 +1,6 @@
 let users = JSON.parse(localStorage.getItem("users")) || [];
 class user {
-  constructor() {}
+  constructor() { }
   validatePass(userpass) {
     let value = userpass.length < 5 ? false : true;
     return value;
@@ -14,13 +14,7 @@ class user {
       this.usertype = usertype;
       users.push(this);
       localStorage.setItem("users", JSON.stringify(users));
-      localStorage.setItem("currentUser", JSON.stringify(useremail));
-      localStorage.setItem("currentType", JSON.stringify(usertype));
-      if (usertype == "student") {
-        window.location = "../login/login.html";
-      } else {
-        window.location = "../login/login.html";
-      }
+      window.location = "../login/login.html";
     } else {
       alert("Please Check your password length or empty filed");
     }
