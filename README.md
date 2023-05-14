@@ -4,7 +4,7 @@
 
 This is one of my best project that I had built myself.
 
-## Deployed Link :- https://sparkling-salmiakki-eec37c.netlify.app/
+## Deployed Link :-https://learning-managment-system.netlify.app/
 
 ### There are basically two types of users . One is `Admin` and another is `Student`. 
 
