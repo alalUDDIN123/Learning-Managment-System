@@ -1,6 +1,11 @@
 let users = JSON.parse(localStorage.getItem("users"));
 // console.log("userData", users);
 
+if (users == null) {
+  alert("No user data found so you should first signup");
+  window.location.href = "../Signup/index.html"
+}
+
 class user {
   constructor() { }
   login(useremail, userpass, userRole) {
