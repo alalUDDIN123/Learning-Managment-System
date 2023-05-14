@@ -73,3 +73,20 @@ let data = JSON.parse(localStorage.getItem("lectures")) || [];
     `;
   }
   showData();
+
+
+  
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("active");
+  nav.classList.toggle("active");
+});
+
+// select logo
+let logo=document.getElementsByClassName("home_admin_page_redirect")[0];
+console.log(logo);
+logo.addEventListener("click",()=>{
+  window.location.href="../Admin_Page/Admin.html"
+})

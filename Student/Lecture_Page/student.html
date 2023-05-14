@@ -10,9 +10,8 @@
   <body>
     <div class="nav">
       <div class="elements">
-        <!-- <img src="https://www.masaischool.com/img/navbar/logo.svg" alt=""/> -->
-        <h1>Student</h1>
-        <a href="file:///E:/Website/Masai%20Course%20Platform/Student/Lecture_Page/student.html" class="active"><p>Lectures</p></a>
+        <h1 class="home_student_page_redirect" >Student</h1>
+        <a href="./student.html" class="active"><p>Lectures</p></a>
         <a href="../Assingment_Page/Assingment_Page.html"><p>Assignments</p></a>
         <a href="#"> Quizzes</a>
         <a href="#">Tickets</a>
@@ -25,9 +24,16 @@
 
       <div>
         <div class="guest"></div>
-        <!-- <a href="file:///E:/Website/Masai%20Course%20Platform/Registration/Signup%20Page/index.html">Logout</a> -->
+        
       </div>
     </div>
+
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
 
 
     <div class="title">
@@ -71,6 +77,11 @@
     <div class="section">
       <div class="lectures"></div>
     </div>
+
+    <div id="no_lecture">
+      There are no lectures available at this time.
+    </div>
+    
   </body>
 </html>
 <script src="student.js"></script>

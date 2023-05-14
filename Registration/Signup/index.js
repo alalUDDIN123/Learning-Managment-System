@@ -17,9 +17,9 @@ class user {
       localStorage.setItem("currentUser", JSON.stringify(useremail));
       localStorage.setItem("currentType", JSON.stringify(usertype));
       if (usertype == "student") {
-        window.location = "./Registration/Login Page/login.html";
+        window.location = "../login/login.html";
       } else {
-        window.location = "./Registration/Login Page/login.html";
+        window.location = "../login/login.html";
       }
     } else {
       alert("Please Check your password length or empty filed");

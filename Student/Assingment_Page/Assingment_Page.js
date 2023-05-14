@@ -1,4 +1,18 @@
 let data = JSON.parse(localStorage.getItem("assignments")) || [];
+
+let noLectureData = document.getElementById("no_assignmnt")
+let filterDuv = document.getElementsByClassName("add")[0]
+// console.log(filterDuv);
+
+// console.log("lengthL:", data.length);
+
+
+if (data.length === 0) {
+  filterDuv.style.display="none"
+
+}else{
+  noLectureData.style.display="none"
+}
   class lectureList {
     constructor() {}
     showLectureList() {
@@ -131,3 +145,19 @@ let data = JSON.parse(localStorage.getItem("assignments")) || [];
   function resetFilter() {
     window.location.reload();
   }
+
+  
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("active");
+  nav.classList.toggle("active");
+});
+
+// select logo
+let logo=document.getElementsByClassName("home_student_page_redirect")[0];
+console.log(logo);
+logo.addEventListener("click",()=>{
+  window.location.href="../Lecture_Page/student.html"
+})
